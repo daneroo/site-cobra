@@ -14,6 +14,26 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      .hero-unit.diag-ne {
+          background: #d3251f; /* Old browsers */
+          background: -moz-linear-gradient(45deg,  #d3251f 0%, #d3251f 20%, #ffcf00 40%, #ffcf00 60%, #00915f 80%, #00915f 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#d3251f), color-stop(20%,#d3251f), color-stop(40%,#ffcf00), color-stop(60%,#ffcf00), color-stop(80%,#00915f), color-stop(100%,#00915f)); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* IE10+ */
+          background: linear-gradient(45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3251f', endColorstr='#00915f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+      .hero-unit.diag-se {
+          background: #d3251f; /* Old browsers */
+          background: -moz-linear-gradient(-45deg,  #d3251f 0%, #d3251f 20%, #ffcf00 40%, #ffcf00 60%, #00915f 80%, #00915f 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#d3251f), color-stop(20%,#d3251f), color-stop(40%,#ffcf00), color-stop(60%,#ffcf00), color-stop(80%,#00915f), color-stop(100%,#00915f)); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(-45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(-45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(-45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* IE10+ */
+          background: linear-gradient(-45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3251f', endColorstr='#00915f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
       .hero-unit h1 {
           font-size: 120px;
           font-weight: 200;
@@ -70,14 +90,15 @@
     <div class="container">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <img class="hero-logo" src="img/logo-cobra-vert.jpg">
+      <div class="hero-unit diag-ne">
+          <img class="hero-logo" src="img/logo-cobra-vert.jpg">
+          <!-- <img class="hero-logo" src="img/logo-cobra-horz.jpg"> -->
         <h1>Cobra</h1>
         <h2>du Mandingue</h2>
         <p class="slogan">Ne manquez pas Djembé d'Or 2012<br>
         9 et 10 novembre à la salle Jean Despréz Gatineau 20h</p>
         <p>
-            <a href="http://www.ovation.qc.ca/salle-jean-desprez.asp" target="_blank" class="btn btn-primary btn-large">Reservez »</a>
+            <a href="http://www.ovation.qc.ca/salle-jean-desprez.asp" target="_blank" class="btn btn-inverse btn-large">Reservez »</a>
         </p>
       </div>
 
