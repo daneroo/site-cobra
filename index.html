@@ -34,21 +34,33 @@
           background: linear-gradient(-45deg,  #d3251f 0%,#d3251f 20%,#ffcf00 40%,#ffcf00 60%,#00915f 80%,#00915f 100%); /* W3C */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3251f', endColorstr='#00915f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
       }
-      .hero-unit h1 {
-          font-size: 120px;
-          font-weight: 200;
+      .bigandlight {
+        font-size: 200%;
+        font-weight: 200;
       }
-      .hero-unit h2 {
+      .spacedandlight {
           font-weight: 200;
           letter-spacing:0.6em
-      }
-      .hero-unit .slogan {
-          clear: both;
       }
       .hero-logo {
           float:left;
           padding-right: 20px;
           height:200px;
+      }
+      @media (max-width: 480px) {
+        .hero-unit { padding:30px; }
+        .bigandlight { font-size: 160%; }
+        .spacedandlight { letter-spacing:0.3em }
+        .hero-logo {
+          float:none;
+          display: block;
+          margin:auto;
+        }
+      }
+      @media (max-width: 768px) { 
+      }
+      .hero-unit .slogan {
+          clear: both;
       }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -91,10 +103,10 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit diag-ne">
-          <img class="hero-logo" src="img/logo-cobra-vert.jpg">
+          <img class="hero-logo" src="img/logo-cobra-vert.png">
           <!-- <img class="hero-logo" src="img/logo-cobra-horz.jpg"> -->
-        <h1>Cobra</h1>
-        <h2>du Mandingue</h2>
+        <h1><span class="bigandlight">Cobra</span></h1>
+        <h2 class="spacedandlight">du Mandingue</h2>
         <p class="slogan">Ne manquez pas Djembé d'Or 2012<br>
         9 et 10 novembre à la salle Jean Despréz Gatineau 20h</p>
         <p>
