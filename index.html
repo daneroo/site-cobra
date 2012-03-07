@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Cobra du Mandingue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
     <style type="text/css">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      .hero-unit h1 {
+          font-size: 120px;
+          font-weight: 200;
+      }
+      .hero-unit h2 {
+          font-weight: 200;
+          letter-spacing:0.6em
+      }
+      .hero-unit .slogan {
+          clear: both;
+      }
+      .hero-logo {
+          float:left;
+          padding-right: 20px;
+          height:200px;
+      }
     </style>
-    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -22,10 +39,10 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/examples/images/favicon.ico">
-    <link rel="apple-touch-icon" href="http://twitter.github.com/bootstrap/examples/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="http://twitter.github.com/bootstrap/examples/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="http://twitter.github.com/bootstrap/examples/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
   </head>
 
   <body>
@@ -38,12 +55,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="http://twitter.github.com/bootstrap/examples/hero.html#">Project name</a>
+          <a class="brand" href="#">Cobra du Mandingue</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="http://twitter.github.com/bootstrap/examples/hero.html#">Home</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/hero.html#about">About</a></li>
-              <li><a href="http://twitter.github.com/bootstrap/examples/hero.html#contact">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#media">Media</a></li>
+              <li><a href="#spectacle">Spectalces</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -54,34 +71,58 @@
 
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more »</a></p>
+        <img class="hero-logo" src="img/logo-cobra-vert.jpg">
+        <h1>Cobra</h1>
+        <h2>du Mandingue</h2>
+        <p class="slogan">Ne manquez pas Djembé d'Or 2012<br>
+        9 et 10 novembre à la salle Jean Despréz Gatineau 20h</p>
+        <p>
+            <a href="http://www.ovation.qc.ca/salle-jean-desprez.asp" target="_blank" class="btn btn-primary btn-large">Reservez »</a>
+        </p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p>
+        <div id="contact" class="span4">
+            <h2>Contact</h2>
+            <p>
+                <!-- <button class="btn btn-large">Action</button> -->
+                <address>
+                    <strong>Renseignements</strong><br>
+                    <a href="mailto:#">info@cobradumandingue.com</a>
+                </address>
+                <address>
+                    <a href="http://www.facebook.com/CobraDuMandingue" target="_blank" style="" class="btn btn-large"><img width="30" src="img/facebook.png"></a>
+                </address>
+                <address>
+                    <strong>Mohamed Diarra</strong><br>
+                    <abbr title="Telephone">(T)</abbr> +1 (819) 776-3901<br>
+                    <abbr title="Mobile">(M)</abbr> +1 (819) 210-8913<br>
+                </address>    
+                <address>
+                    <strong>Catherine Veilleux</strong><br>
+                    <abbr title="Telephone">(T)</abbr> +1 (819) 777-2208<br>
+                    <abbr title="Mobile">(M)</abbr> +1 (819) 639-1208<br>
+                </address>    
+            </p>
+            <!-- <p><a class="btn" href="#">Plus d'infos »</a></p> -->
         </div>
-        <div class="span4">
-          <h2>Heading</h2>
+        <div id="spectacle" class="span4">
+          <h2>Spectacles</h2>
            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p>
+           <p><a class="btn" href="#">Plus d'infos »</a></p>
        </div>
-        <div class="span4">
-          <h2>Heading</h2>
+        <div id="media" class="span4">
+          <h2>Media</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="http://twitter.github.com/bootstrap/examples/hero.html#">View details »</a></p>
+          <p><a class="btn" href="#">Plus d'infos »</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>© Company 2012</p>
+        <p>© Cobra du Mandingue 2012</p>
       </footer>
 
     </div> <!-- /container -->
@@ -89,7 +130,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-1.7.1.js"></script>
     <script src="./js/bootstrap-transition.js"></script>
     <script src="./js/bootstrap-alert.js"></script>
     <script src="./js/bootstrap-modal.js"></script>
